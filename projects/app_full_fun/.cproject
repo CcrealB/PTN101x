@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="com.beyondsemi.config.ba.elf.exe.debug.23224644">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.beyondsemi.config.ba.elf.exe.debug.23224644" moduleId="org.eclipse.cdt.core.settings" name="debug">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="${ProjName}" buildArtefactType="com.beyondsemi.base.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.beyondsemi.base.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="com.beyondsemi.config.ba.elf.exe.debug.23224644" name="debug" parent="com.beyondsemi.config.ba.elf.exe.debug" postbuildStep="chmod +x ./encrypt.bat ./ptn101_mcu_dsp_bin_merge &amp;&amp; ./encrypt.bat ${ProjName}" prebuildStep="rm -rf *.dmp *.map *.out *.elf *.txt *.IMG *.bin">
+                    					
+                    <folderInfo id="com.beyondsemi.config.ba.elf.exe.debug.23224644." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.exe.debug.561184622" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.exe.debug">
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.endianness.457728122" name="Endianness" superClass="com.beyondsemi.option.toolchain.gnu.endianness" useByScannerDiscovery="false" value="com.beyondsemi.base.option.endianness.little" valueType="enumerated"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mdsp.150421483" name="use DSP extensions (-mdsp)" superClass="com.beyondsemi.option.toolchain.gnu.mdsp" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mmac.952376889" name="use multiply-accumulate extensions (-mmac)" superClass="com.beyondsemi.option.toolchain.gnu.mmac" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.malign32.22339319" name="align strings and arrays to word boundary (-malign32)" superClass="com.beyondsemi.option.toolchain.gnu.malign32" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mnohardmul.1690658396" name="don't generate hardware multiplication instruction (-mno-hard-mul)" superClass="com.beyondsemi.option.toolchain.gnu.mnohardmul" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mnoharddiv.651716330" name="don't generate hardware division instruction (-mno-hard-div)" superClass="com.beyondsemi.option.toolchain.gnu.mnoharddiv" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mhardfloat.408914958" name="use hardware FP unit (-mhard-float)" superClass="com.beyondsemi.option.toolchain.gnu.mhardfloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mfpu.1611860465" name="target FPU (-mfpu)" superClass="com.beyondsemi.option.toolchain.gnu.mfpu" useByScannerDiscovery="false" value="com.beyondsemi.base.option.mfpu.v2sp" valueType="enumerated"/>
+                            							
+                            <targetPlatform id="com.beyondsemi.target.gnu.platform.ba.elf.exe.debug.1602754349" superClass="com.beyondsemi.target.gnu.platform.ba.elf.exe.debug"/>
+                            							
+                            <builder arguments="-j${NUMBER_OF_PROCESSORS}" buildPath="${workspace_loc:/hello_cache/Debug}" command="make" id="com.beyondsemi.builder.ba.elf.exe.debug.1481579829" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" stopOnErr="true" superClass="com.beyondsemi.builder.ba.elf.exe.debug"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.debug.1145455110" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.debug">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.none" id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization.1880933170" name="Optimization Level" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization" useByScannerDiscovery="false" value="gnu.c.optimization.level.size" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.compiler.option.debugging.level.1271890588" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                								
+                                <option id="com.beyondsemi.option.gnu.c.compiler.endianness.1565093851" name="Endianness" superClass="com.beyondsemi.option.gnu.c.compiler.endianness" useByScannerDiscovery="false" value="com.beyondsemi.base.option.endianness.little" valueType="enumerated"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.preprocessor.def.symbols.585727425" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="BA22_DEee"/>
+                                    								
+                                </option>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.137521369" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/app/SYS_APP}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/beken_ctrl}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/sys/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/bluetooth/protocol/avctp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/bluetooth/protocol/avdtp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/le/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/include/os}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/bluetooth}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/bluetooth/profile/a2dp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/bluetooth/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/config}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/jos}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/pkg/sbc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/jos/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/audio}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/beken_app}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/beken_driver}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/beken_no_os}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/common}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/mod_dsp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/mod_spdif}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/mod_recoder}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/usb_driver}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/common/bluetooth}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/port/include/bluetooth}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/bt/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/hc/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/lc/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/lc/dl/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/lc/uslc/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/lc/lslc/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/lmp/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/sys/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/tc/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/transport/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/core/hw/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/hal/hw/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/hal/hw/radio/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/hal/beken/hw/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/controller/hal/beken/sys/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/AAC}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/sbc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/Mp3Lib}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/FatLib}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/AEC}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/RESAMPLE}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/asrc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/project/app_peripheral/app/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/project/app_peripheral/app/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/project/app_peripheral/config}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/driver/uart}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/header}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/inc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/ll/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/ll/import}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/ll/import/reg}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/import}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/import/reg}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/em/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/hci/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/sch/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/sch/import}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/aes/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/common/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/dbg/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/display/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/ecc_p256/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/h4tl/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/ke/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/nvds/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/rf/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/rwip/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/rwip/import}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/rwip/import/reg}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/plf/prf}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/plf/refip/import}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/plf/refip/import/reg}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hrp/hrpc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/sdp/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/system}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/plf/refip/src/arch/compiler}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/plf/refip/src/arch}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/plf/refip/src/arch/ll}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gatt/gattc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gatt/gattm}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gatt}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gatt/attc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gatt/attm}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gatt/atts}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gap/gapc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/gap/gapm}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/ke/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hrp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/ll/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/project/app_central/app/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp/hogprh}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp/hogprh/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp/hogprh/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/FFF0/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/FFF0/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/FEE0/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/FEE0/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/project/app_peripheral/config}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/project/app_peripheral/app/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/project/app_peripheral/app/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/l2c/l2cc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/hl/src/l2c/l2cm}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/ll/src/llc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/ll/src/lld}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/ble/ll/src/llm}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/src/lb}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/src/lc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/src/ld}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/bt/src/lm}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/ip/hci/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/aes/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/dbg/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/display/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/modules/rwip/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/anp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/anp/anpc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/ancs/ancsc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/ancs/ancsc}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/anp/anpc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/anp/anps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/anp/anps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bas/basc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bas/basc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bas/bass/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bas/bass/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bcs}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bcs/bcsc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bcs/bcsc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bcs/bcss/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/bcs/bcss/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/blp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/blp/blpc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/blp/blpc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/blp/blps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/blp/blps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cpp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cpp/cppc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cpp/cppc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cpp/cpps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cpp/cpps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cscp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cscp/cscpc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cscp/cscpc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cscp/cscps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/cscp/cscps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/dis/disc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/dis/disc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/dis/diss/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/dis/diss/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/electric/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/FCC0_128/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/find}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/find/findl/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/find/findl/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/find/findt/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/find/findt/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/glp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/glp/glpc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/glp/glpc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/glp/glps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp/hogpbh/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp/hogpbh/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp/hogpd/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hogp/hogpd/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hrp/hrpc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hrp/hrps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/hrp/hrps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/htp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/htp/htpc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/htp/htpc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/htp/htpt/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/htp/htpt/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/lan}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/lan/lanc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/lan/lanc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/lan/lans/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/lan/lans/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/pasp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/pasp/paspc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/pasp/paspc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/pasp/pasps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/pasp/pasps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/prox/proxm/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/prox/proxm/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/prox/proxr/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/prox/proxr/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/rscp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/rscp/rscpc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/rscp/rscpc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/rscp/rscps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/rscp/rscps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/scpp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/scpp/scppc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/scpp/scppc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/scpp/scpps/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/scpp/scpps/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/tip}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/tip/tipc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/tip/tipc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/tip/tips/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/tip/tips/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/uds}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/uds/udsc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/uds/udsc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/uds/udss/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/uds/udss/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/wscp}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/wscp/wscc/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/wscp/wscc/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/wscp/wscs/api}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/wscp/wscs/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rw_ble/Src/profiles/ota/api}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mmac.816701508" name="use multiply-accumulate extensions (-mmac)" superClass="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mmac" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
+                                <option id="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mdsp.1107372013" name="use DSP extensions (-mdsp)" superClass="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mdsp" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
+                                <option id="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mnoharddiv.389125240" name="don't generate hardware division instruction (-mno-hard-div)" superClass="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mnoharddiv" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                                								
+                                <option id="com.beyondsemi.optioncategory.gnu.c.compiler.insns.msinglefloat.2059500120" name="Make the double type single precision (32bit) to facilitate use of fast hardware floating point instructions (-msingle-float)" superClass="com.beyondsemi.optioncategory.gnu.c.compiler.insns.msinglefloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
+                                <option id="gnu.c.compiler.option.misc.other.1492157023" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0  -fno-strict-aliasing -ffast-math -fgnu89-inline" valueType="string"/>
+                                								
+                                <option id="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mnohardmul.2031007700" name="don't generate hardware multiplication instruction (-mno-hard-mul)" superClass="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mnohardmul" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                                								
+                                <option id="gnu.c.compiler.option.optimization.flags.775374894" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="-flto -G 100000 " valueType="string"/>
+                                								
+                                <option id="gnu.c.compiler.option.misc.pic.1520345203" name="Position Independent Code (-fPIC)" superClass="gnu.c.compiler.option.misc.pic" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                                								
+                                <option id="gnu.c.compiler.option.warnings.toerrors.1285722919" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
+                                <option id="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mhardfloat.1645076" name="use hardware FP unit (-mhard-float)" superClass="com.beyondsemi.optioncategory.gnu.c.compiler.insns.mhardfloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
+                                <option id="gnu.c.compiler.option.dialect.std.662767364" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.c.compiler.option.include.files.119206147" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles"/>
+                                								
+                                <inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.2102710948" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+                                								
+                                <inputType id="com.beyondsemi.assembler.macro.input.1422009741" superClass="com.beyondsemi.assembler.macro.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.exe.debug.1924603311" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.exe.debug">
+                                								
+                                <option defaultValue="gnu.cpp.compiler.optimization.level.none" id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.optimization.1213999181" name="Optimization Level" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.optimization" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option id="gnu.cpp.compiler.option.debugging.level.1336479711" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+                                								
+                                <option id="com.beyondsemi.option.gnu.cpp.compiler.endianness.1230012341" name="Endianness" superClass="com.beyondsemi.option.gnu.cpp.compiler.endianness" useByScannerDiscovery="false" value="com.beyondsemi.base.option.endianness.little" valueType="enumerated"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.exe.debug.115308290" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.exe.debug">
+                                								
+                                <option id="com.beyondsemi.option.gnu.c.linker.endianness.1709012479" name="Endianness" superClass="com.beyondsemi.option.gnu.c.linker.endianness" useByScannerDiscovery="false" value="com.beyondsemi.base.option.endianness.little" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.link.option.nostart.1826528084" name="Do not use standard start files (-nostartfiles)" superClass="gnu.c.link.option.nostart" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
+                                <option id="gnu.c.link.option.ldflags.124399501" name="Linker flags" superClass="gnu.c.link.option.ldflags" useByScannerDiscovery="false" value="-T ../ram.ld -flto -Os -G 100000" valueType="string"/>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.link.option.libs.147774128" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="m"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="PTN101_RWBLE_LIB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="PTN101_CONTROLLER_LIB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="PTN101_HOST_LIB"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="mp3encoder"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="aac_decoder"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="src_244"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="src_248"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="PTN101x_MCU_LIB"/>
+                                    								
+                                </option>
+                                								
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.link.option.paths.267008334" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/AAC}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/AEC}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/RESAMPLE}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/host/libs/Mp3Lib}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.403635839" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.exe.debug.118950384" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.exe.debug">
+                                								
+                                <option id="com.beyondsemi.option.gnu.cpp.linker.endianness.70673811" name="Endianness" superClass="com.beyondsemi.option.gnu.cpp.linker.endianness" value="com.beyondsemi.base.option.endianness.little" valueType="enumerated"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.exe.debug.910627692" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.exe.debug">
+                                								
+                                <option id="com.beyondsemi.option.gnu.assembler.endianness.1632290520" name="Endianness" superClass="com.beyondsemi.option.gnu.assembler.endianness" useByScannerDiscovery="false" value="com.beyondsemi.base.assembler.option.endianness.little" valueType="enumerated"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.165798834" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                								
+                                <inputType id="com.beyondsemi.assembler.input.1788062181" superClass="com.beyondsemi.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1164429167" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.size.exe.debug.1459094188" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.exe.debug"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.exe.debug.1680963084" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.exe.debug"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <folderInfo id="com.beyondsemi.config.ba.elf.exe.debug.23224644.1950560040" name="/" resourcePath="app/FM_QNxx">
+                        						
+                        <toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.exe.debug.516304921" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.exe.debug" unusedChildren="">
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.endianness.457728122.753756238" name="Endianness" superClass="com.beyondsemi.option.toolchain.gnu.endianness.457728122"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mdsp.150421483.80163410" name="use DSP extensions (-mdsp)" superClass="com.beyondsemi.option.toolchain.gnu.mdsp.150421483"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mmac.952376889.1031020948" name="use multiply-accumulate extensions (-mmac)" superClass="com.beyondsemi.option.toolchain.gnu.mmac.952376889"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.malign32.22339319.832129748" name="align strings and arrays to word boundary (-malign32)" superClass="com.beyondsemi.option.toolchain.gnu.malign32.22339319"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mnohardmul.1690658396.1298066532" name="don't generate hardware multiplication instruction (-mno-hard-mul)" superClass="com.beyondsemi.option.toolchain.gnu.mnohardmul.1690658396"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mnoharddiv.651716330.2070021547" name="don't generate hardware division instruction (-mno-hard-div)" superClass="com.beyondsemi.option.toolchain.gnu.mnoharddiv.651716330"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mhardfloat.408914958.779059496" name="use hardware FP unit (-mhard-float)" superClass="com.beyondsemi.option.toolchain.gnu.mhardfloat.408914958"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mfpu.1611860465.490972538" name="target FPU (-mfpu)" superClass="com.beyondsemi.option.toolchain.gnu.mfpu.1611860465"/>
+                            							
+                            <targetPlatform id="com.beyondsemi.target.gnu.platform.ba.elf.exe.debug" superClass="com.beyondsemi.target.gnu.platform.ba.elf.exe.debug"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.debug.714422381" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.debug.1145455110">
+                                								
+                                <inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1083312515" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+                                								
+                                <inputType id="com.beyondsemi.assembler.macro.input.184004549" superClass="com.beyondsemi.assembler.macro.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.exe.debug.332122952" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.exe.debug.1924603311"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.exe.debug.779937890" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.exe.debug.115308290"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.exe.debug.111785442" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.exe.debug.118950384"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.exe.debug.1498000534" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.exe.debug.910627692">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.260001003" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                								
+                                <inputType id="com.beyondsemi.assembler.input.1990786162" superClass="com.beyondsemi.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.693367661" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1164429167"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.size.exe.debug.1898872377" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.exe.debug.1459094188"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.exe.debug.1290065023" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.exe.debug.1680963084"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <folderInfo id="com.beyondsemi.config.ba.elf.exe.debug.23224644.395574785" name="/" resourcePath="rw_ble">
+                        						
+                        <toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.exe.debug.1917827185" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.exe.debug" unusedChildren="">
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.endianness.457728122.858464612" name="Endianness" superClass="com.beyondsemi.option.toolchain.gnu.endianness.457728122"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mdsp.150421483.2135541854" name="use DSP extensions (-mdsp)" superClass="com.beyondsemi.option.toolchain.gnu.mdsp.150421483"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mmac.952376889.114844510" name="use multiply-accumulate extensions (-mmac)" superClass="com.beyondsemi.option.toolchain.gnu.mmac.952376889"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.malign32.22339319.1779088168" name="align strings and arrays to word boundary (-malign32)" superClass="com.beyondsemi.option.toolchain.gnu.malign32.22339319"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mnohardmul.1690658396.860127438" name="don't generate hardware multiplication instruction (-mno-hard-mul)" superClass="com.beyondsemi.option.toolchain.gnu.mnohardmul.1690658396"/>
+                            							
+                            <option id="com.beyondsemi.option.toolchain.gnu.mnoharddiv.651716330.1226818126" name="don't generate hardware division instruction (-mno-hard-div)" superClass="com.beyondsemi.option.toolchain.gnu.mnoharddiv.651716330"/>
+                            							
+                            <targetPlatform id="com.beyondsemi.target.gnu.platform.ba.elf.exe.debug" superClass="com.beyondsemi.target.gnu.platform.ba.elf.exe.debug"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.debug.2128920123" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.debug.1145455110">
+                                								
+                                <inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.123174787" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+                                								
+                                <inputType id="com.beyondsemi.assembler.macro.input.880972995" superClass="com.beyondsemi.assembler.macro.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.exe.debug.369966591" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.exe.debug.1924603311"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.exe.debug.409142816" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.exe.debug.115308290"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.exe.debug.849660124" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.exe.debug.118950384"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.exe.debug.447623940" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.exe.debug.910627692">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.2025312604" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                								
+                                <inputType id="com.beyondsemi.assembler.input.1497385597" superClass="com.beyondsemi.assembler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.451569467" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1164429167"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.size.exe.debug.2144792409" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.exe.debug.1459094188"/>
+                            							
+                            <tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.exe.debug.1132572488" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.exe.debug.1680963084"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="rw_ble|controller|build|host" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        						
+                        <entry excluding="core" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="controller"/>
+                        						
+                        <entry excluding="port/usb|bluetooth" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="host"/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="hello_cache.com.beyondsemi.projecttype.ba.elf.exe.1512965418" name="Beyond BA application" projectType="com.beyondsemi.projecttype.ba.elf.exe"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="refreshScope" versionNumber="2">
+        		
+        <configuration configurationName="debug"/>
+        		
+        <configuration configurationName="build">
+            			
+            <resource resourceType="PROJECT" workspacePath="/hello_cache"/>
+            		
+        </configuration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        		
+        <scannerConfigBuildInfo instanceId="com.beyondsemi.config.ba.elf.exe.release.702650377;com.beyondsemi.config.ba.elf.exe.release.702650377.;com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.release.233472553;com.beyondsemi.base.ba.elf.c.compiler.input.1855469482">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.beyondsemi.base.elf.c.scanner.configdiscovery"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="com.beyondsemi.config.ba.elf.exe.debug.23224644;com.beyondsemi.config.ba.elf.exe.debug.23224644.;com.beyondsemi.tool.gnu.ba.elf.compiler.c.exe.debug.1145455110;com.beyondsemi.base.ba.elf.c.compiler.input.2102710948">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.beyondsemi.base.elf.c.scanner.configdiscovery"/>
+            		
+        </scannerConfigBuildInfo>
+        	
+    </storageModule>
+    
+</cproject>

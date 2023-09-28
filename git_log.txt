@@ -1,0 +1,18 @@
+ptn101x_sdk_kara
+commit 603593f98b9067e4df1f931aedd01db4dd4d17e7
+Author: Borg <496375345@qq.com>
+Date:   Fri Jul 14 10:01:25 2023 +0800
+
+    【修复】U盘播放音乐调音工具HID切模式死机问题。U盘第一次上电不切模式的默认时间改到5秒，因为实际项目出现过3秒的情况。
+
+commit 7055e464b553606f24c6ac9e02b1ef8e84070a07
+Author: Borg <496375345@qq.com>
+Date:   Fri Jul 7 21:58:28 2023 +0800
+
+    【修复SarADC】GPIO32对应的通道采样不准的问题，这里对硬件的连续4次采样去掉最大最小值后取平均。
+
+commit f546120beedb88d9f10280e9e7710bd4eae0fb44
+Author: Borg <496375345@qq.com>
+Date:   Tue Jul 4 18:40:31 2023 +0800
+
+    修复关闭蓝牙功能宏。
